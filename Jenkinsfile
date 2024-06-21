@@ -9,13 +9,13 @@ pipeline {
   environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
     GITHUB_CREDENTIALS = credentials('github')
-    DOCKER_IMAGE = 'yourdockerhubusername/nodejs-project'
+    DOCKER_IMAGE = 'labbtest/nodejs-project'
   }
 
   stages {
     stage('Clone Repository') {
       steps {
-        git branch: 'main', credentialsId: 'github', url: 'https://github.com/yourusername/your-repo.git'
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/lab-testt/Nodejs-PostgreSQL.git'
       }
     }
 
