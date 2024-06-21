@@ -9,4 +9,3 @@ INSERT INTO persons (name, age) VALUES
 ('John Doe', 30),
 ('Jane Smith', 25),
 ('Alice Johnson', 22);
-
