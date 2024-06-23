@@ -10,7 +10,7 @@ services:
     ports:
       - "5434:5432"
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./Nodejs-PostgreSQL/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   nodejs:
     build: .
